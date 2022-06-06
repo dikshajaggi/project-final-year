@@ -1,0 +1,86 @@
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6vh;
+}
+.menu .menuTitle {
+  font-size: 40px;
+}
+
+.menuList {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 33%;
+}
+
+/* MENU ITEM STYLING */
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  width: 18%;
+  height: 20%;
+  margin: 20px;
+}
+.menuItem:hover {
+  cursor: pointer;
+}
+
+.menuItem div {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menuItem h1,
+.menuItem p {
+  text-align: center;
+}
+
+.menuItem h1 {
+  padding-top: 2vh;
+  font-size: 20px;
+}
+
+.menuItem .price-add {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menuItem #buttonAdd {
+  background-color: black;
+  width: 8vw;
+  height: 6vh;
+  border: none;
+}
+
+.menuItem #add {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+}

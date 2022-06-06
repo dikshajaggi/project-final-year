@@ -1,0 +1,12 @@
+.orderNowBtn {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.orderNow {
+  display: flex;
+  float: right;
+  margin-right: 2vw;
+  margin-top: -2vh;
+}
