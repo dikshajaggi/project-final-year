@@ -61,7 +61,7 @@
   justify-content: space-evenly;
 }
 
-.menuItem #buttonAdd {
+.menuItem .buttonAdd {
   background-color: black;
   width: 8vw;
   height: 6vh;

@@ -1,4 +1,3 @@
-import Pizza from "../images/pizza.jpg";
 export const MenuList = [
   {
     name: " Pizza",

@@ -1,8 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const userRoutes = require("./routes/userRoutes");
+const productRoutes = require("./routes/productRoutes");
 const connectDB = require("./config/db");
-const menu = require("./data/MenuList");
 
 const app = express();
 dotenv.config();
@@ -18,6 +18,7 @@ app.get("/menu", (req, res) => {
 });
 
 app.use("/users", userRoutes);
+app.use("/products", productRoutes);
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, console.log(`server started on port ${PORT}`));
