@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 // Actions
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
+import Navbar from "../components/Navbar";
 
 const ProductScreen = ({ match, history }) => {
   const [qty, setQty] = useState(1);
@@ -25,7 +26,9 @@ const ProductScreen = ({ match, history }) => {
   };
 
   return (
-    <div className="productscreen">
+    <>
+    <Navbar />
+      <div className="productscreen">
       {loading ? (
         <h2>Loading...</h2>
       ) : error ? (
@@ -38,7 +41,7 @@ const ProductScreen = ({ match, history }) => {
             </div>
             <div className="left__info">
               <p className="left__name">{product.name}</p>
-              <p>Price: ${product.price}</p>
+              <p>Price: ₹{product.price}</p>
               <p>Description: {product.description}</p>
             </div>
           </div>
@@ -46,7 +49,7 @@ const ProductScreen = ({ match, history }) => {
             <div className="right__info">
               <p>
                 Price:
-                <span>${product.price}</span>
+                <span>₹{product.price}</span>
               </p>
               <p>
                 Status:
@@ -74,6 +77,7 @@ const ProductScreen = ({ match, history }) => {
         </>
       )}
     </div>
+    </>
   );
 };
 

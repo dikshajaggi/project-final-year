@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import NavbarCart from "../components/NavbarCart";
+import Navbar from "../components/Navbar";
 import "../styles/Login.css";
 import axios from "axios";
 import Loading from "../components/Loading";
@@ -47,12 +47,13 @@ const Login = () => {
 
   return (
     <>
-      <NavbarCart />
+      <Navbar />
 
       <div className="loginWrapper">
         {error && <ErrorMsg variant="danger"> {error} </ErrorMsg>}
         {loading && <Loading />}
-        <Form onSubmit={submitHandler}>
+        <div className="loginBox">
+          <Form onSubmit={submitHandler}>
           <Form.Group controlId="formBasicEmail" className="mb-3">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -74,18 +75,19 @@ const Login = () => {
             />
           </Form.Group>
 
-          <Button variant="secondary" type="submit">
-            Submit
+          <Button className="loginBtn" type="submit">
+            Log in
           </Button>
         </Form>
         <Row className="py-3">
           <Col>
-            New User ?{" "}
+            Don't have an account?{" "}
             <Link className="login-reg-link" to="/register">
-              Register Here
+              Sign up
             </Link>
           </Col>
         </Row>
+        </div>
       </div>
     </>
   );

@@ -10,6 +10,7 @@ import MenuScreen from "./pages/MenuScreen";
 import SideDrawer from "./components/SideDrawer";
 import Backdrop from "./components/Backdrop";
 import { useState } from "react";
+import Payment from "./pages/Payment";
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/menu" component={MenuScreen} />
           <Route exact path="/product/:id" component={ProductScreen} />
           <Route exact path="/cart" component={CartScreen} />
+          <Route exact path = "/payment" component={Payment} />
         </Switch>
         <Footer />
       </Router>

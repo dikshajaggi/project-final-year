@@ -4,7 +4,7 @@ import "../styles/Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <p> &copy; 2021 pedrotechpizza.com</p>
+      <p> &copy; 2022 GiftGallery.com</p>
     </div>
   );
 }

@@ -10,10 +10,22 @@
   margin-left: auto;
 }
 
-.login-reg-link {
-  color: #cd5700;
-  text-decoration: none;
+.loginBox{
+  height:50vh;
+  width:55vw;
+  background-color: #ffffff;
+}
+
+.loginBtn{
+  background: linear-gradient(90deg, rgba(251,48,48,1) 0%, rgba(101,96,253,1) 100%);;
+  color: #ffffff;
   font-weight: 600;
+}
+
+.login-reg-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .login-reg-link:hover {

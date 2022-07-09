@@ -7,6 +7,7 @@ import Product from "../components/Product";
 
 //Actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
+import Navbar from "../components/Navbar";
 
 const MenuScreen = () => {
   const dispatch = useDispatch();
@@ -19,7 +20,9 @@ const MenuScreen = () => {
   }, [dispatch]);
 
   return (
-    <div className="homescreen">
+    <>
+      <Navbar />
+      <div className="homescreen">
       <h2 className="homescreen__title">Latest Products</h2>
       <div className="homescreen__products">
         {loading ? (
@@ -40,6 +43,7 @@ const MenuScreen = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

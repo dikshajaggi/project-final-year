@@ -62,7 +62,7 @@
 }
 
 .menuItem .buttonAdd {
-  background-color: black;
+  background: linear-gradient(90deg, rgba(251,48,48,1) 0%, rgba(101,96,253,1) 100%);;
   width: 8vw;
   height: 6vh;
   border: none;

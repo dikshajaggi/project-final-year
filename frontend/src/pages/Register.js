@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import NavbarCart from "../components/NavbarCart";
+import Navbar from "../components/Navbar";
 import "../styles/Register.css";
 import axios from "axios";
 import Loading from "../components/Loading";
@@ -52,7 +52,7 @@ const Register = () => {
   };
   return (
     <>
-      <NavbarCart />
+      <Navbar />
       <div className="registerWrapper">
         {error && <ErrorMsg variant="danger">{error}</ErrorMsg>}
         {message && <ErrorMsg variant="danger">{message}</ErrorMsg>}
@@ -98,8 +98,8 @@ const Register = () => {
             />
           </Form.Group>
 
-          <Button variant="secondary" type="submit">
-            Register
+          <Button className = "loginBtn" type="submit">
+            Sign up
           </Button>
         </Form>
         <Row className="mb-3">
