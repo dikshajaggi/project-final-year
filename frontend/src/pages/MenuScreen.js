@@ -38,6 +38,7 @@ const MenuScreen = () => {
               price={product.price}
               imageUrl={product.imageUrl}
               productId={product._id}
+              category={product.category}
             />
           ))
         )}

@@ -1,0 +1,26 @@
+models -> categories.js
+option for categories in navbar
+routes -> categories route
+controllers -> category controller
+data -> categories.js
+---------------------------------------------------
+
+
+---------------------------------pending--------------------------------
+payment option
+real time tracking
+add search option 
+displaying products as per category-----
+    adding category as a key-value in product model
+
+
+*****************
+command to add data to mongoose directly from terminal
+
+
+///////////////////////////////////////////////////////////////////////////////
+completed
+get all categories and single category api are working
+all categories are getting displayed
+going to specific category page
+//////////////////////////////////////////////////////////////////////////////

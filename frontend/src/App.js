@@ -27,6 +27,7 @@ function App() {
           <Route exact path="/product/:id" component={ProductScreen} />
           <Route exact path="/cart" component={CartScreen} />
           <Route exact path = "/payment" component={Payment} />
+          {/* <Route exact path="/category" component={ProductScreen} /> */}
         </Switch>
         <Footer />
       </Router>

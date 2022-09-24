@@ -9,10 +9,13 @@ import {
   getProductDetailsReducer
 } from "./reducers/productReducers";
 
+import { getCategoryReducer } from "./reducers/categoryReducer";
+
 const reducer = combineReducers({
   cart: cartReducer,
   getProducts: getProductsReducer,
-  getProductDetails: getProductDetailsReducer
+  getProductDetails: getProductDetailsReducer,
+  getCategories: getCategoryReducer
 });
 
 const middleware = [thunk];
